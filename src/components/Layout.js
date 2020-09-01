@@ -5,9 +5,11 @@ import { Header, Footer } from '.';
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
-      {children}
-      <Footer />
+      <div>
+        <Header />
+        <div className="bg-gray-100"> {children} </div>
+        <Footer />
+      </div>
     </>
   );
 };
