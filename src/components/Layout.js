@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { Header, Footer } from '.';
+import { Header, Navbar, Footer } from '.';
 
-const Layout = ({ children }) => {
+const Layout = props => {
+  const { children, location } = props;
   return (
-    <>
-      <div>
-        <Header />
-        <div className="bg-gray-100"> {children} </div>
-        <Footer />
-      </div>
-    </>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <Navbar location={location} />
+      <div className="bg-gray-100 flex-grow-1">{children}</div>
+      <Footer />
+    </div>
   );
 };
 

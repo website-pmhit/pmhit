@@ -1,2 +1,2 @@
-import './src/styles/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './src/styles/index.css';
