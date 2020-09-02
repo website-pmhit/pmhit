@@ -3,16 +3,21 @@ import { Link } from 'gatsby';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => {
   return (
     <nav>
-      <Navbar expand="md">
+      <Navbar
+        className="__gradient"
+        variant="dark"
+        fixed="top"
+        expand="md"
+        style={{
+          borderBottom: '1px solid #ffffff2c',
+        }}
+      >
         <Navbar.Brand as={Link} to="/">
-          <span className="font-bold text-blue-500 text-2xl tracking-tight ">
-            pmHIT
-          </span>
+          <span className="font-bold text-3xl tracking-tight ">pmHIT</span>
         </Navbar.Brand>
         <Navbar.Toggle
           className="focus:outline-none"
@@ -23,33 +28,38 @@ const NavBar = () => {
             <Nav.Link
               as={Link}
               to="/"
-              className=""
               activeStyle={{
+                color: 'white',
                 fontWeight: 'bold',
               }}
             >
               Home
-            </Nav.Link>{' '}
+            </Nav.Link>
             <Nav.Link
               as={Link}
               to="/blog"
-              className=""
               activeStyle={{
+                color: 'white',
                 fontWeight: 'bold',
               }}
             >
               Blog
             </Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown" className="">
-              <NavDropdown.Item as={Link} to="#action/3.1">
-                Action
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              as={Link}
+              to="/training"
+              activeStyle={{
+                color: 'white',
+                fontWeight: 'bold',
+              }}
+            >
+              Training
+            </Nav.Link>
             <Nav.Link
               as={Link}
               to="/contact"
-              className=""
               activeStyle={{
+                color: 'white',
                 fontWeight: 'bold',
               }}
             >

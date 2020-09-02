@@ -1,9 +1,13 @@
 import React from 'react';
 
-import { Layout } from '../components';
+import { Layout, Hero } from '../components';
 
 const Home = () => {
-  return <Layout>INDEX</Layout>;
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  );
 };
 
 export default Home;

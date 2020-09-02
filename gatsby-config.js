@@ -18,6 +18,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/assets`,
+        name: 'src-assets',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/content/blog`,
         name: 'content-blog',
       },
@@ -50,7 +57,6 @@ module.exports = {
       options: {
         tailwind: true,
         purgeOnly: ['src/styles/index.css'],
-        develop: true,
       },
     },
   ],
