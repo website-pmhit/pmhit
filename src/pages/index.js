@@ -1,11 +1,13 @@
 import React from 'react';
 
-import { Layout, Hero } from '../components';
+import { Layout, Hero, HeroIndex } from '../components';
 
 const Home = () => {
   return (
     <Layout>
-      <Hero />
+      <Hero>
+        <HeroIndex />
+      </Hero>
     </Layout>
   );
 };

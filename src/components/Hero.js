@@ -1,49 +1,9 @@
 import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
-const Hero = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "hero_1.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
+const Hero = ({ children }) => {
   return (
     <div className="__gradient">
-      <div className="pt-20 md:pt-24 pb-16 container grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
-        <div className="py-12 flex flex-col w-full justify-start items-center text-center md:items-start">
-          <p className="mt-4 w-full uppercase text-white tracking-loose md:text-left">
-            some question to catch reader's eye?
-          </p>
-          <h1 className="mt-2 w-full text-5xl text-white font-bold leading-tight md:text-left">
-            Main Hero Message!
-          </h1>
-          <p className="mt-2 w-full text-2xl text-white leading-normal md:text-left">
-            Sub-hero message, not too long and not too short. Consectetur tempor
-            eiusmod consectetur sit.
-          </p>
-          <Link to="/contact" className="z-50 mt-4">
-            <button className="p-2 border border-solid-1 border-white bg-blue-500 text-white text-xl font-semibold rounded-full shadow-lg hover:bg-blue-400">
-              Contact Us
-            </button>
-          </Link>
-        </div>
-        <div className="">
-          <Img
-            className="m-auto z-50"
-            fluid={data.file.childImageSharp.fluid}
-            alt="Depicting generic growth"
-          />
-        </div>
-      </div>
-
+      <div>{children}</div>
       <div className="relative -mt-12 lg:-mt-24">
         <svg
           viewBox="0 0 1428 174"
