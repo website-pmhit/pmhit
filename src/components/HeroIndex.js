@@ -8,7 +8,7 @@ const HeroIndex = () => {
       file(relativePath: { eq: "hero_1.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -16,7 +16,7 @@ const HeroIndex = () => {
   `);
 
   return (
-    <div className="pt-20 md:pt-24 pb-16 container grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
+    <div className="pb-16 container grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
       <div className="py-12 flex flex-col w-full justify-start items-center text-center lg:items-start">
         <p className="mt-4 w-full uppercase text-white tracking-loose lg:text-left">
           some question to catch reader's eye?

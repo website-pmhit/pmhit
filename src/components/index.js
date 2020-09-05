@@ -4,5 +4,6 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import HeroIndex from './HeroIndex';
+import ContentIndex from './ContentIndex';
 
-export { Layout, Header, Footer, Navbar, Hero, HeroIndex };
+export { Layout, Header, Footer, Navbar, Hero, HeroIndex, ContentIndex };

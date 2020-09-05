@@ -44,7 +44,7 @@ module.exports.createPages = async ({ actions, graphql }) => {
       const id = edge.node.id;
       if (edge.node.frontmatter.type == 'blog')
         createPage({
-          path: edge.node.fields.slug,
+          path: `/blog${edge.node.fields.slug}`,
           component: path.resolve(`./src/templates/blog.js`),
           context: {
             id,

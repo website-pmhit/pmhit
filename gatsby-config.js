@@ -59,5 +59,11 @@ module.exports = {
         purgeOnly: ['src/styles/index.css'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-tawk',
+      options: {
+        tawkId: process.env.TAWK_ID,
+      },
+    },
   ],
 };

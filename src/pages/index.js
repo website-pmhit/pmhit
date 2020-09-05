@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { Layout, Hero, HeroIndex } from '../components';
+import { Layout, Hero, HeroIndex, ContentIndex } from '../components';
 
-const Home = () => {
+const Home = ({ location }) => {
+  console.log(location);
   return (
     <Layout>
       <Hero>
         <HeroIndex />
       </Hero>
+      <ContentIndex />
     </Layout>
   );
 };
