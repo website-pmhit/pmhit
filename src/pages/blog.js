@@ -4,10 +4,10 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
 
-const Blog = ({ data }) => {
+const Blog = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query MyQuery {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { frontmatter: { type: { eq: "blog" } } }) {
         edges {
           node {
             id

@@ -65,5 +65,12 @@ module.exports = {
         tawkId: process.env.TAWK_ID,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/content/pages`,
+        name: 'content-pages',
+      },
+    },
   ],
 };

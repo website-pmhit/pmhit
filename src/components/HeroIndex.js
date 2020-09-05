@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-const HeroIndex = () => {
+const HeroIndex = ({ mainMessage, subMessage }) => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "hero_1.png" }) {
@@ -22,11 +22,10 @@ const HeroIndex = () => {
           some question to catch reader's eye?
         </p>
         <h1 className="mt-2 w-full text-5xl text-white font-bold leading-tight lg:text-left">
-          Main Hero Message!
+          {mainMessage}
         </h1>
         <p className="mt-2 w-full text-2xl text-white leading-normal lg:text-left">
-          Sub-hero message, not too long and not too short. Consectetur tempor
-          eiusmod consectetur sit.
+          {subMessage}
         </p>
         <Link to="/contact" className="z-50 mt-4">
           <button className="p-2 border border-solid-1 border-white bg-blue-500 text-white text-xl font-semibold rounded-full shadow-lg hover:bg-blue-400">
