@@ -37,16 +37,6 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/blog"
-              activeStyle={{
-                color: 'white',
-                fontWeight: 'bold',
-              }}
-            >
-              Blog
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
               to="/training"
               activeStyle={{
                 color: 'white',
@@ -54,6 +44,36 @@ const NavBar = () => {
               }}
             >
               Training
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/coaching"
+              activeStyle={{
+                color: 'white',
+                fontWeight: 'bold',
+              }}
+            >
+              Coaching
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/consulting"
+              activeStyle={{
+                color: 'white',
+                fontWeight: 'bold',
+              }}
+            >
+              Consulting
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/blog"
+              activeStyle={{
+                color: 'white',
+                fontWeight: 'bold',
+              }}
+            >
+              Blog
             </Nav.Link>
             <Nav.Link as={Link} to="/contact">
               <button className="md:ml-1 p-2 border border-solid-1 border-white md:bg-blue-500 text-white text-sm font-bold md:font-semibold rounded-full md:shadow-lg md:hover:bg-blue-400 focus:outline-none">

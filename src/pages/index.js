@@ -4,9 +4,9 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Layout, Hero, HeroIndex, ContentIndex } from '../components';
 
 const Home = () => {
-  const { markdownRemark } = useStaticQuery(graphql`
+  const { heroData } = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { path: { eq: "index" } }) {
+      heroData: markdownRemark(frontmatter: { path: { eq: "index" } }) {
         frontmatter {
           mainMessage
           subMessage
@@ -18,8 +18,8 @@ const Home = () => {
     <Layout>
       <Hero>
         <HeroIndex
-          mainMessage={markdownRemark.frontmatter.mainMessage}
-          subMessage={markdownRemark.frontmatter.subMessage}
+          mainMessage={heroData.frontmatter.mainMessage}
+          subMessage={heroData.frontmatter.subMessage}
         />
       </Hero>
       <ContentIndex />

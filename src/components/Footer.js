@@ -27,20 +27,38 @@ const Footer = () => {
               </li>
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <Link
-                  to="/testimonials"
-                  className="opacity-50 cursor-not-allowed no-underline hover:underline text-gray-300 hover:text-white"
+                  to="/coaching"
+                  className="no-underline hover:underline text-gray-300 hover:text-white"
                 >
-                  Testimonials
+                  Coaching
                 </Link>
               </li>
               <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                 <Link
-                  to="/faq"
-                  className="opacity-50 cursor-not-allowed no-underline hover:underline text-gray-300 hover:text-white"
+                  to="/consulting"
+                  className="no-underline hover:underline text-gray-300 hover:text-white"
                 >
-                  FAQ
+                  Consulting
                 </Link>
               </li>
+              {
+                // <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                //   <Link
+                //     to="/testimonials"
+                //     className="opacity-50 cursor-not-allowed no-underline hover:underline text-gray-300 hover:text-white"
+                //   >
+                //     Testimonials
+                //   </Link>
+                // </li>
+                // <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                //   <Link
+                //     to="/faq"
+                //     className="opacity-50 cursor-not-allowed no-underline hover:underline text-gray-300 hover:text-white"
+                //   >
+                //     FAQ
+                //   </Link>
+                // </li>
+              }
             </ul>
           </div>
           <div className="flex-1">
