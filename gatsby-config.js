@@ -72,5 +72,6 @@ module.exports = {
         name: 'content-pages',
       },
     },
+    'gatsby-plugin-optimize-svgs',
   ],
 };
