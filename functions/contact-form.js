@@ -9,7 +9,7 @@ function sendEmail(client, formBody, senderEmail, senderName) {
       },
       subject: `Contact from ${formBody.name}`,
       to: 'website.pmhit@gmail.com',
-      html: `<h3><em>${formBody.name}</em> has contacted you</h3><br>Email : ${formBody.email}<br>Message : ${formBody.message}`,
+      html: `<h3><em>${formBody.name}</em> has contacted you</h3><br>Email : ${formBody.email}<br>Contact Number : ${formBody.number}<br>Company : ${formBody.company}<br>Message : ${formBody.message}`,
     };
 
     client

@@ -3,19 +3,14 @@ import { Link } from 'gatsby';
 import aboutUs1 from '../assets/about_us_1.svg';
 import aboutUs2 from '../assets/about_us_2.svg';
 
-const ContentIndex = () => {
+const AboutUs = () => {
   return (
     <div className="container mx-auto mt-17">
-      <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-blue-800">
-        About Us
-      </h1>
-      <div className="w-full mb-4">
-        <div className="h-1 mx-auto __gradient w-64 opacity-25 my-0 py-0 rounded-lg"></div>
-      </div>
+      <h1 className="pb-6 w-full text-5xl font-bold leading-tight text-center text-blue-800"></h1>
 
-      <div className="py-8 grid grid-cols-1 md:grid-cols-2 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 ">
         <div className="p-6 flex flex-col items-center justify-center">
-          <h3 className="w-full text-3xl text-blue-500 font-bold leading-none mb-3">
+          <h3 className="w-full text-3xl text-blue-500 font-bold mb-3">
             Training that puts people first
           </h3>
           <p className="w-full text-lg text-gray-600 mb-8">
@@ -36,7 +31,7 @@ const ContentIndex = () => {
           <img className="hidden md:block h-48" src={aboutUs2} />
         </div>
         <div className="p-6 flex flex-col items-center justify-center">
-          <h3 className="w-full text-3xl text-blue-500 font-bold leading-none mb-3">
+          <h3 className="w-full text-3xl text-blue-500 font-bold mb-3">
             Training that puts people first
           </h3>
           <p className="w-full text-lg text-gray-600 mb-8">
@@ -58,4 +53,4 @@ const ContentIndex = () => {
   );
 };
 
-export default ContentIndex;
+export default AboutUs;

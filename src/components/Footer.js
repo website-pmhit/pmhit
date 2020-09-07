@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="__gradient">
       <div className="container mx-auto px-2">
-        <div className="w-full flex flex-col md:flex-row py-6">
+        <div className="w-full flex flex-col md:flex-row pt-6">
           <div className="flex-1 mb-6">
             <Link
               className="text-white no-underline hover:no-underline font-bold text-xl lg:text-4xl"
@@ -132,6 +132,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="text-gray-300 mb-2 tracking-wide">
+          Copyright &copy; {new Date().getFullYear()} pmHIT
         </div>
       </div>
     </footer>

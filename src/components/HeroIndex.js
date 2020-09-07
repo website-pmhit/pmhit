@@ -4,7 +4,7 @@ import HeroImage from '../assets/hero_1.svg';
 
 const HeroIndex = ({ question, mainMessage, subMessage }) => {
   return (
-    <div className="pb-16 px-10 container grid grid-cols-1 lg:grid-cols-8">
+    <div className="px-10 container grid grid-cols-1 lg:grid-cols-8">
       <div className="lg:col-span-5 py-12 flex flex-col w-full justify-start items-center text-center lg:items-start">
         <p className="mt-4 w-full uppercase text-white tracking-loose lg:text-left">
           {question}
@@ -21,7 +21,7 @@ const HeroIndex = ({ question, mainMessage, subMessage }) => {
           </button>
         </Link>
       </div>
-      <div className="p-4 lg:col-span-3 flex flex-col justify-center items-center">
+      <div className="p-4  lg:col-span-3 flex flex-col justify-center items-center">
         <img className="h-56" src={HeroImage} alt="Depicting growth" />
       </div>
     </div>

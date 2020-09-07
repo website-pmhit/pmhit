@@ -1,7 +1,14 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { Layout, Hero, HeroIndex, ContentIndex } from '../components';
+import {
+  Layout,
+  Hero,
+  HeroIndex,
+  AboutUs,
+  ContactForm,
+  TestimonialsIndex,
+} from '../components';
 
 const Home = () => {
   const { heroData } = useStaticQuery(graphql`
@@ -22,7 +29,11 @@ const Home = () => {
           subMessage={heroData.frontmatter.subMessage}
         />
       </Hero>
-      <ContentIndex />
+      <div className="container">
+        <AboutUs />
+        <TestimonialsIndex />
+        <ContactForm />
+      </div>
     </Layout>
   );
 };
